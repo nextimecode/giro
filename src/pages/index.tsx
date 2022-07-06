@@ -4,14 +4,13 @@ import Head from 'next/head'
 import NextLayout from 'components/templates/nextLayout'
 import NextHero from 'components/organisms/nextHero'
 import { Box, Heading, Text, SimpleGrid } from '@chakra-ui/react'
+import NextFooter from 'components/organisms/nextFooter'
 
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>NeXTIME Chakra UI</title>
-        <meta name="description" content="Site da empresa NeXTIME" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>O GIRO</title>
       </Head>
 
       <NextLayout>
@@ -85,6 +84,7 @@ export default function Home() {
           </Text>
         </Box>
       </NextLayout>
+      <NextFooter />
     </div>
   )
 }

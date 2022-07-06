@@ -10,7 +10,7 @@ export default class MyDocument extends Document {
         <Head>
           <meta
             name="description"
-            content="Site da empresa NeXTIME, temos como visão: otimizar o tempo através do desenvolvimento de novas tecnologias, produtos inovadores, soluções criativas e educação. Possibilitando aos indivíduos gastarem suas energias realizando os seus sonhos."
+            content="Giro é um movimento que busca impulsionar a cultura musical mineira. Criamos oportunidades para que novos talentos da indústria local consigam transformar sua arte em negócio e levar a cultura mineira para o mundo. "
           />
           <link
             href="//db.onlinewebfonts.com/c/e7d21c0fe0214c0e242e4a757f373782?family=DINNextLTW04-HeavyCondensed"
@@ -19,6 +19,7 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             crossOrigin=""
           />
+          <link rel="icon" href="/favicon.png" />
         </Head>
         <body>
           <Main />

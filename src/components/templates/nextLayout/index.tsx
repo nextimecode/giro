@@ -1,7 +1,6 @@
-import Head from 'next/head'
+import NextFooter from 'components/organisms/nextFooter'
 import React, { PropsWithChildren } from 'react'
 import NextHeader, { NavItem } from '../../organisms/nextHeader'
-import NextFooter from '../../organisms/nextFooter'
 
 type Props = {
   navItems?: Array<NavItem>
@@ -17,8 +16,6 @@ type Props = {
 const NextLayout = ({
   navItems,
   children,
-  title = 'NeXTIME',
-  description = 'Site da empresa NeXTIME, temos como visão: otimizar o tempo através do desenvolvimento de novas tecnologias, produtos inovadores, soluções criativas e educação. Possibilitando aos indivíduos gastarem suas energias realizando os seus sonhos.',
   logoSrc,
   logoHeight,
   logoSubtitle,
@@ -26,12 +23,6 @@ const NextLayout = ({
 }: PropsWithChildren<Props>) => {
   return (
     <>
-      <Head>
-        <title>{title}</title>
-        <meta name="description" content={description} />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <NextHeader
         navItems={navItems}
         logoSrc={logoSrc}
