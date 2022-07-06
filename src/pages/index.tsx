@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import NextLayout from 'components/templates/nextLayout'
+import NextHero from 'components/organisms/nextHero'
 
 export default function Home() {
   return (
@@ -11,7 +12,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <NextLayout />
+      <NextLayout>
+        <NextHero />
+      </NextLayout>
     </div>
   )
 }

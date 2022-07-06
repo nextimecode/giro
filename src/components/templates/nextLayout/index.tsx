@@ -41,11 +41,7 @@ const NextLayout = ({
         logoSubtitleColor={logoSubtitleColor}
       />
 
-      <main>
-        <Container maxW="container.lg" py={[8, 16]}>
-          {children}
-        </Container>
-      </main>
+      <main>{children}</main>
 
       <NextFooter />
     </>
