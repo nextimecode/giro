@@ -23,7 +23,7 @@ const NextHero = ({
         <Image alt={alt} src={image} width={width} height={height} />
       </Box>
       <Box display={{ base: 'block', sm: 'none' }}>
-        <Image alt={alt} src={'/images/hero_mobile.png'} width={640} height={885} />
+        <Image alt={alt} src={'/images/hero_mobile.png'} width={443} height={700} />
       </Box>
     </header>
   )
