@@ -1,4 +1,3 @@
-import NextFooter from 'components/organisms/nextFooter'
 import React, { PropsWithChildren } from 'react'
 import NextHeader, { NavItem } from '../../organisms/nextHeader'
 
