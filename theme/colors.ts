@@ -1,20 +1,19 @@
 const colors = {
-  'next-primary': '#4882F8',
-  'next-light': '#6688CD',
-  'next-green': '#85F2C9',
-  'next-dark': '#2D426D',
-  'next-gray': '#BDBDBD',
-  'next-dark-gray': '#2A2A2D',
-  dark: '#17171B',
-  'next-blue': {
-    100: '#00DAE9',
-    200: '#4882F8',
-    900: '#2D426D'
+  blue: {
+    500: '#0778BE',
+    700: '#003E74'
   },
-  'next-red': {
-    200: '#EB4A68',
-    300: '#FF747C',
-    400: '#EE468E'
+  red: {
+    500: '#D63B50'
+  },
+  beige: {
+    500: '#E9D5B9'
+  },
+  yellow: {
+    500: '#FFCD04'
+  },
+  black: {
+    200: '#1F1E24'
   }
 }
 
