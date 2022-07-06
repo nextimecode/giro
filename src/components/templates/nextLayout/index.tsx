@@ -2,7 +2,6 @@ import Head from 'next/head'
 import React, { PropsWithChildren } from 'react'
 import NextHeader, { NavItem } from '../../organisms/nextHeader'
 import NextFooter from '../../organisms/nextFooter'
-import { Container } from '@chakra-ui/react'
 
 type Props = {
   navItems?: Array<NavItem>
