@@ -41,8 +41,6 @@ const NextLayout = ({
       />
 
       <main>{children}</main>
-
-      <NextFooter />
     </>
   )
 }

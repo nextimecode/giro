@@ -47,6 +47,43 @@ export default function Home() {
             <Text>Inscrições de 25/07 a 31/07.</Text>
           </Box>
         </SimpleGrid>
+        <Box bgColor={'blue.500'}>
+          <Heading color={'yellow.500'}>SALVE NA AGENDA PARA NÃO PERDER A INSCRIÇÃO</Heading>
+        </Box>
+        <Image
+          alt={'Imagem Gerdau mais Rock in Rio'}
+          src={'/images/gerdauerockrio.png'}
+          width={1920}
+          height={551}
+        />
+        <SimpleGrid bgColor={'beige.500'} columns={[1, 2]} spacing={10}>
+          <Box w="100%" color={'black'}>
+            <Text>
+              A Gerdau, a maior empresa Brasileira produtora de aço e uma das principais
+              fornecedoras de aços longos nas Américas e de aços especiais no mundo, agora é
+              parceira do GIRO.
+            </Text>
+          </Box>
+          <Box w="100%" color={'black'}>
+            <Text>
+              A maior recicladora da América Latina mais uma vez vem reforçar seu compromisso com as
+              futuras gerações, e o aço que já moldava um futuro mais sustentável, agora também vai
+              moldar o Palco Mundo do Rock in Rio Brasil 2022!
+            </Text>
+          </Box>
+        </SimpleGrid>
+        <Image
+          alt={'Imagem Gerdau mais Rock in Rio'}
+          src={'/images/disco.png'}
+          width={1920}
+          height={212}
+        />
+        <Box w="100%" bgColor={'black.200'}>
+          <Text>
+            A Gerdau, a maior empresa Brasileira produtora de aço e uma das principais fornecedoras
+            de aços longos nas Américas e de aços especiais no mundo, agora é parceira do GIRO.
+          </Text>
+        </Box>
       </NextLayout>
     </div>
   )
