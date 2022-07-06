@@ -18,7 +18,7 @@ import {
   HStack
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, ChevronDownIcon, ChevronRightIcon } from '@chakra-ui/icons'
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa'
+import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
@@ -62,23 +62,27 @@ export interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'Home'
+    label: 'O GIRO'
   },
   {
-    label: 'Apps',
-    href: '#app'
+    label: 'PALCO PRO FUTURO',
+    href: '#'
   },
   {
-    label: 'WebSites',
-    href: '#site'
+    label: 'GERDAU',
+    href: '#'
   },
   {
-    label: 'Marketing',
-    href: '#marketing'
+    label: 'RIR',
+    href: '#'
   },
   {
-    label: 'Mentoria',
-    href: '/mentor'
+    label: 'REDES SOCIAIS',
+    href: '#'
+  },
+  {
+    label: 'BAIXE O REGULAMENTO',
+    href: '#'
   }
 ]
 
@@ -203,19 +207,19 @@ const MobileNav = ({ navItems = NAV_ITEMS }: Props) => {
 
 const NextHeader = ({
   navItems = NAV_ITEMS,
-  logoSrc = '/images/logos/logo_nextime.svg',
-  logoWidth = 146,
-  logoHeight = 45,
-  logoAlt = 'NeXTIME Logo',
+  logoSrc = '/images/logos/logo.svg',
+  logoWidth = 340,
+  logoHeight = 100,
+  logoAlt = 'Logo',
   logoSubtitle,
   logoSubtitleColor = 'next-primary'
 }: Props) => {
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box borderBottom={1} borderStyle={'solid'} borderColor={'gray.700'}>
+    <Box>
       <Container maxW="container.lg">
-        <Flex color={'gray.600'} minH={'70px'} align={'center'}>
+        <Flex color={'white'} minH={'70px'} align={'center'}>
           <Flex flex={{ base: 1 }} display={{ base: 'flex', md: 'none' }}>
             <IconButton
               onClick={onToggle}
@@ -238,17 +242,6 @@ const NextHeader = ({
 
           <Stack flex={{ base: 1 }} justify={'flex-end'} direction={'row'} spacing={6}>
             <HStack spacing={{ base: 3, md: 6 }}>
-              <NextJSLink href={'https://www.instagram.com/nextimetec/'}>
-                <a target="_blank" rel="noreferrer">
-                  <Icon
-                    color="next-gray"
-                    _hover={{ color: 'next-primary' }}
-                    as={FaInstagram}
-                    w={6}
-                    h={6}
-                  />
-                </a>
-              </NextJSLink>
               <NextJSLink href={'https://www.facebook.com/nextimetecnologia'}>
                 <a target="_blank" rel="noreferrer">
                   <Icon
@@ -260,12 +253,23 @@ const NextHeader = ({
                   />
                 </a>
               </NextJSLink>
+              <NextJSLink href={'https://www.instagram.com/nextimetec/'}>
+                <a target="_blank" rel="noreferrer">
+                  <Icon
+                    color="next-gray"
+                    _hover={{ color: 'next-primary' }}
+                    as={FaInstagram}
+                    w={6}
+                    h={6}
+                  />
+                </a>
+              </NextJSLink>
               <NextJSLink href={'https://www.linkedin.com/company/nextimetec/'}>
                 <a target="_blank" rel="noreferrer">
                   <Icon
                     color="next-gray"
                     _hover={{ color: 'next-primary' }}
-                    as={FaLinkedinIn}
+                    as={FaYoutube}
                     w={6}
                     h={6}
                   />

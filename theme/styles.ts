@@ -3,7 +3,7 @@ const styles = {
     body: {
       fontFamily: 'body',
       color: 'whiteAlpha.900',
-      bg: 'dark',
+      bg: 'blue.500',
       lineHeight: 'base'
     }
   })
