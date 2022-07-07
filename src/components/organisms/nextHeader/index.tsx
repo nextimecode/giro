@@ -135,8 +135,13 @@ const NextHeader = ({
     <Box>
       <Container maxW="container.lg">
         <Flex color={'white'} minH={'70px'} align={'center'}>
-          <Flex justify={{ base: 'center' }} alignItems={'center'}>
-            <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoHeight} />
+                  <Box display={{ base: 'block', md: 'none' }}>
+          <Image src={logoSrc} alt={logoAlt} width={85} height={25} />
+        </Box>
+          <Flex>
+            <Box display={{ base: 'none', md: 'block' }}>
+              <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoHeight} />
+            </Box>
             {logoSubtitle && (
               <Text fontSize={{ base: 'lg', lg: 'xl' }} color={logoSubtitleColor}>
                 {logoSubtitle}
