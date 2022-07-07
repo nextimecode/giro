@@ -3,8 +3,9 @@ import Image from 'next/image'
 import Head from 'next/head'
 import NextLayout from 'components/templates/nextLayout'
 import NextHero from 'components/organisms/nextHero'
-import { Box, Heading, Text, SimpleGrid } from '@chakra-ui/react'
+import { Box, Heading, Text, SimpleGrid, HStack, Center } from '@chakra-ui/react'
 import NextFooter from 'components/organisms/nextFooter'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -55,7 +56,7 @@ export default function Home() {
           width={1920}
           height={551}
         />
-        <SimpleGrid bgColor={'beige.500'} columns={[1, 2]} spacing={10}>
+        <SimpleGrid h="379" bgColor={'beige.500'} columns={[1, 2]} spacing={10}>
           <Box w="100%" color={'black'}>
             <Text>
               A Gerdau, a maior empresa Brasileira produtora de aço e uma das principais
@@ -71,18 +72,38 @@ export default function Home() {
             </Text>
           </Box>
         </SimpleGrid>
-        <Image
-          alt={'Imagem Gerdau mais Rock in Rio'}
-          src={'/images/disco.png'}
-          width={1920}
-          height={212}
-        />
-        <Box w="100%" bgColor={'black.200'}>
-          <Text>
-            A Gerdau, a maior empresa Brasileira produtora de aço e uma das principais fornecedoras
-            de aços longos nas Américas e de aços especiais no mundo, agora é parceira do GIRO.
-          </Text>
+        <Box mt={[-5, -20]}>
+          <Image
+            alt={'Imagem Gerdau mais Rock in Rio'}
+            src={'/images/disco.svg'}
+            width={1920}
+            height={218}
+          />
         </Box>
+        <Center h="175" pt={12} w="100%" mt={[-5, -20]} bgColor={'black.200'}>
+          <HStack spacing={{ base: 3, md: 6 }}>
+            <Link href={'https://www.facebook.com/nextimetecnologia'}>
+              <a target="_blank" rel="noreferrer">
+                <Image alt={'Logo Facebook'} src={'/images/facebook.svg'} width={31} height={31} />
+              </a>
+            </Link>
+            <Link href={'https://www.instagram.com/nextimetec/'}>
+              <a target="_blank" rel="noreferrer">
+                <Image
+                  alt={'Logo Instagram'}
+                  src={'/images/instagram.svg'}
+                  width={31}
+                  height={31}
+                />
+              </a>
+            </Link>
+            <Link href={'https://www.linkedin.com/company/nextimetec/'}>
+              <a target="_blank" rel="noreferrer">
+                <Image alt={'Logo Youtube'} src={'/images/youtube.svg'} width={31} height={31} />
+              </a>
+            </Link>
+          </HStack>
+        </Center>
       </NextLayout>
       <NextFooter />
     </div>
