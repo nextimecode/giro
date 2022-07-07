@@ -82,12 +82,12 @@ export default function Home() {
         </Box>
         <Center h="175" pt={12} w="100%" mt={[-5, -20]} bgColor={'black.200'}>
           <HStack spacing={{ base: 3, md: 6 }}>
-            <Link href={'https://www.facebook.com/nextimetecnologia'}>
+            <Link href={'https://pt-br.facebook.com/gerdau/'}>
               <a target="_blank" rel="noreferrer">
                 <Image alt={'Logo Facebook'} src={'/images/facebook.svg'} width={31} height={31} />
               </a>
             </Link>
-            <Link href={'https://www.instagram.com/nextimetec/'}>
+            <Link href={'https://www.instagram.com/gerdau/?hl=pt-br'}>
               <a target="_blank" rel="noreferrer">
                 <Image
                   alt={'Logo Instagram'}
@@ -97,7 +97,7 @@ export default function Home() {
                 />
               </a>
             </Link>
-            <Link href={'https://www.linkedin.com/company/nextimetec/'}>
+            <Link href={'https://www.youtube.com/c/Gerdau-Brasil'}>
               <a target="_blank" rel="noreferrer">
                 <Image alt={'Logo Youtube'} src={'/images/youtube.svg'} width={31} height={31} />
               </a>

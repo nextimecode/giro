@@ -144,7 +144,7 @@ const NextHeader = ({
           </Flex>
           <Stack flex={{ base: 1 }} justify={'flex-end'} direction={'row'}>
             <HStack spacing={{ base: 3, md: 4 }}>
-              <NextJSLink href={'https://www.facebook.com/nextimetecnologia'}>
+              <NextJSLink href={'https://www.facebook.com/dobrasil.live/'}>
                 <a target="_blank" rel="noreferrer">
                   <Image
                     alt={'Logo Facebook'}
@@ -154,7 +154,7 @@ const NextHeader = ({
                   />
                 </a>
               </NextJSLink>
-              <NextJSLink href={'https://www.instagram.com/nextimetec/'}>
+              <NextJSLink href={'https://www.instagram.com/boraprogiro/?hl=pt-br'}>
                 <a target="_blank" rel="noreferrer">
                   <Image
                     alt={'Logo Instagram'}
@@ -164,7 +164,7 @@ const NextHeader = ({
                   />
                 </a>
               </NextJSLink>
-              <NextJSLink href={'https://www.linkedin.com/company/nextimetec/'}>
+              <NextJSLink href={'https://vimeo.com/dobrasil'}>
                 <a target="_blank" rel="noreferrer">
                   <Image alt={'Logo Youtube'} src={'/images/youtube.svg'} width={31} height={31} />
                 </a>
