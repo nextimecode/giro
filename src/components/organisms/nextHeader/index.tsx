@@ -15,7 +15,6 @@ import {
   HStack
 } from '@chakra-ui/react'
 import { HamburgerIcon, CloseIcon, ChevronDownIcon } from '@chakra-ui/icons'
-import { FaFacebookF, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 export interface NavItem {
   label: string
