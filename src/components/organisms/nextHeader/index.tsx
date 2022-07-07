@@ -111,7 +111,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
 const MobileNav = ({ navItems = NAV_ITEMS }: Props) => {
   return (
-    <Stack bg={'gray.800'} p={4}>
+    <Stack bg={'black.200'} p={4}>
       {navItems.map(navItem => (
         <MobileNavItem key={navItem.label} {...navItem} />
       ))}
@@ -122,8 +122,8 @@ const MobileNav = ({ navItems = NAV_ITEMS }: Props) => {
 const NextHeader = ({
   navItems = NAV_ITEMS,
   logoSrc = '/images/logos/logo.svg',
-  logoWidth = 340,
-  logoHeight = 100,
+  logoWidth = 170,
+  logoHeight = 50,
   logoAlt = 'Logo',
   logoSubtitle,
   logoSubtitleColor = 'next-primary'
@@ -134,7 +134,7 @@ const NextHeader = ({
     <Box>
       <Container maxW="container.lg">
         <Flex color={'white'} minH={'70px'} align={'center'}>
-          <Flex flex={{ base: 1 }} justify={{ base: 'center' }} alignItems={'center'}>
+          <Flex justify={{ base: 'center' }} alignItems={'center'}>
             <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoHeight} />
             {logoSubtitle && (
               <Text fontSize={{ base: 'lg', lg: 'xl' }} color={logoSubtitleColor}>
@@ -142,8 +142,8 @@ const NextHeader = ({
               </Text>
             )}
           </Flex>
-          <Stack flex={{ base: 1 }} justify={'flex-end'} direction={'row'} spacing={6}>
-            <HStack spacing={{ base: 3, md: 6 }}>
+          <Stack flex={{ base: 1 }} justify={'flex-end'} direction={'row'}>
+            <HStack spacing={{ base: 3, md: 4 }}>
               <NextJSLink href={'https://www.facebook.com/nextimetecnologia'}>
                 <a target="_blank" rel="noreferrer">
                   <Image
@@ -171,11 +171,12 @@ const NextHeader = ({
               </NextJSLink>
             </HStack>
           </Stack>
-          <Flex display={{ base: 'flex' }}>
+          <Flex ms={12}>
             <IconButton
               onClick={onToggle}
-              icon={isOpen ? <CloseIcon w={3} h={3} /> : <HamburgerIcon w={5} h={5} />}
+              icon={isOpen ? <CloseIcon w={4} h={4} /> : <HamburgerIcon w={7} h={7} />}
               variant={'ghost'}
+              color={'beige.500'}
               aria-label={'Toggle Navigation'}
             />
           </Flex>
