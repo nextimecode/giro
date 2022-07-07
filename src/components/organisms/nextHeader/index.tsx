@@ -25,28 +25,29 @@ export interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: 'O GIRO'
+    label: 'O GIRO',
+    href: '/'
   },
-  {
-    label: 'PALCO PRO FUTURO',
-    href: '#'
-  },
+  // {
+  //   label: 'PALCO PRO FUTURO',
+  //   href: '#'
+  // },
   {
     label: 'GERDAU',
-    href: '#'
+    href: '#gerdau'
   },
-  {
-    label: 'RIR',
-    href: '#'
-  },
+  // {
+  //   label: 'RIR',
+  //   href: '#'
+  // },
   {
     label: 'REDES SOCIAIS',
-    href: '#'
-  },
-  {
-    label: 'BAIXE O REGULAMENTO',
-    href: '#'
+    href: '#redessocias'
   }
+  // {
+  //   label: 'BAIXE O REGULAMENTO',
+  //   href: '#'
+  // }
 ]
 
 type Props = {

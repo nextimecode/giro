@@ -10,6 +10,7 @@ import {
   Text,
   SimpleGrid,
   HStack,
+  VStack,
   Center,
   Grid,
   GridItem,
@@ -27,7 +28,12 @@ export default function Home() {
 
       <NextLayout>
         <NextHero />
-        <Grid bgColor={'white'} templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']} mt={-2}>
+        <Grid
+          bgColor={'white'}
+          templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']}
+          mt={-2}
+          pb={[12, 0]}
+        >
           <GridItem colSpan={2}>
             <Box w="100%" mt={-12}>
               <Image
@@ -40,7 +46,7 @@ export default function Home() {
           </GridItem>
           <GridItem colSpan={4}>
             <Container maxW="container.md" py={[0, 12]}>
-              <Box color={'black'}>
+              <Box color={'black'} pb={6}>
                 <Heading>
                   Já pensou tocar na Praça da Liberdade no Palco Giro ganhando cachê de{' '}
                   <Text as="span" color={'red.500'}>
@@ -49,8 +55,8 @@ export default function Home() {
                   e ainda ter a chance de tocar no Rock in Rio?
                 </Heading>
               </Box>
-              <SimpleGrid bgColor={'white'} columns={[1, 2]} spacing={10} p={0}>
-                <Box color={'black'}>
+              <SimpleGrid bgColor={'white'} columns={[1, 2]} spacing={4} p={0}>
+                <VStack spacing={{ base: 3, md: 4 }} color={'black'}>
                   <Text>
                     Esse ano o Giro dará palco para a próxima geração de artistas que irá conquistar
                     o mundo e você pode fazer parte desse movimento.
@@ -64,13 +70,15 @@ export default function Home() {
                     irão disputar em uma votação popular 6 vagas para tocar no palco Giro na Praça
                     da Liberdade.
                   </Text>
-                </Box>
+                </VStack>
                 <Box color={'black'}>
                   <Text>
                     A banda ou artista mais votado vai, ainda, tocar no Rock In Rio dentro do espaço
                     Gerdau.
                   </Text>
-                  <Heading size="md">FICOU INTERESSADO?</Heading>
+                  <Heading size="md" py={4}>
+                    FICOU INTERESSADO?
+                  </Heading>
                   <Text>Acesse o regulamento e veja como participar.</Text>
                 </Box>
               </SimpleGrid>
@@ -90,6 +98,7 @@ export default function Home() {
           </Heading>
         </Center>
         <Box
+          id="gerdau"
           as={'iframe'}
           src={'https://www.youtube.com/embed/O8a-_mHmZeQ'}
           width="100%"
@@ -103,13 +112,13 @@ export default function Home() {
           width={1920}
           height={551}
         /> */}
-        <SimpleGrid bgColor={'beige.500'} columns={[1, 2]} py={12}>
+        <SimpleGrid bgColor={'beige.500'} columns={[1, 2]} py={12} gap={6}>
           <Container w="100%" color={'black'}>
-            <Text>
+            <Heading fontSize={'xl'}>
               A Gerdau, a maior empresa Brasileira produtora de aço e uma das principais
               fornecedoras de aços longos nas Américas e de aços especiais no mundo, agora é
               parceira do GIRO.
-            </Text>
+            </Heading>
           </Container>
           <Container w="100%" color={'black'}>
             <Text>
@@ -127,8 +136,8 @@ export default function Home() {
             height={218}
           />
         </Box>
-        <Center h="175" pt={12} w="100%" mt={[-5, -20]} bgColor={'black.200'}>
-          <HStack spacing={{ base: 3, md: 6 }}>
+        <Center pt={[6, 20]} pb={[6, 8]} w="100%" mt={[-5, -20]} bgColor={'black.200'}>
+          <HStack spacing={{ base: 3, md: 6 }} id={'redessocias'}>
             <NextLink href={'https://pt-br.facebook.com/gerdau/'}>
               <a target="_blank" rel="noreferrer">
                 <Image alt={'Logo Facebook'} src={'/images/facebook.svg'} width={31} height={31} />

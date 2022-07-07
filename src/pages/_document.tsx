@@ -19,6 +19,12 @@ export default class MyDocument extends Document {
             rel="stylesheet"
             crossOrigin=""
           />
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic&display=swap"
+            rel="stylesheet"
+          />
           <link rel="icon" href="/favicon.png" />
         </Head>
         <body>
