@@ -164,9 +164,7 @@ export default function Home() {
         </Grid>
         <Center bgColor={'blue.700'} textAlign={'center'} py={8}>
           <Link
-            fontSize={'5xl'}
             color={'yellow.500'}
-            fontFamily={'DINNextLTW04-HeavyCondensed'}
             href={'https://forms.gle/X5p7DHfzkkAySZXp6'}
             isExternal
             textDecoration={'underline'}
@@ -174,8 +172,10 @@ export default function Home() {
               color: 'white'
             }}
           >
-            Faça agora<br></br>
-            sua inscrição
+            <Heading>
+              Faça agora<br></br>
+              sua inscrição
+            </Heading>
           </Link>
         </Center>
         <Box
