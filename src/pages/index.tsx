@@ -28,18 +28,88 @@ export default function Home() {
 
       <NextLayout>
         <NextHero />
-        <Grid mt={-2} bgColor={'white'} templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']}>
-          <Image
-            alt={'Logo da Lei de Incentivo à Cultura'}
-            src={'/images/logos/logo_cultura.svg'}
-            width={35}
-            height={70}
-          />
-          <Text>
-            Projeto Executado por meio da Lei Estadual de Incentivo à Cultura CA 2018.13608.0160 CA
-            2018.13607.0372
-          </Text>
-        </Grid>
+        <Box bgColor={'white'}>
+          <Container maxW="container.xl">
+            <Grid py={8} mt={-2} templateColumns={['repeat(1, 1fr)', 'repeat(12, 1fr)']} gap={6}>
+              <GridItem colSpan={3}>
+                <Text
+                  fontSize={'xs'}
+                  textAlign={'center'}
+                  fontFamily={'Montserrat'}
+                  fontWeight={'bold'}
+                  color={'black'}
+                >
+                  Projeto Executado por meio da Lei Estadual de Incentivo à Cultura CA
+                  2018.13608.0160 CA 2018.13607.0372
+                </Text>
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Image
+                  alt={'Logo da Lei de Incentivo à Cultura'}
+                  src={'/images/logos/logo_cultura.svg'}
+                  width={70}
+                  height={70}
+                />
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Image
+                  alt={'Logo da Gerdau'}
+                  src={'/images/logos/gerdau.svg'}
+                  width={104}
+                  height={98}
+                />
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Image
+                  alt={'Logo da Do Brasil'}
+                  src={'/images/logos/dobrasil.svg'}
+                  width={54}
+                  height={97}
+                />
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Image
+                  alt={'Logo Rede Minas'}
+                  src={'/images/logos/redeminas.svg'}
+                  width={110}
+                  height={68}
+                />
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Image
+                  alt={'Logo da Radio Inconfidência'}
+                  src={'/images/logos/radio.svg'}
+                  width={84}
+                  height={69}
+                />
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Image
+                  alt={'Logo da Verbo Gentileza'}
+                  src={'/images/logos/verbo.svg'}
+                  width={60}
+                  height={97}
+                />
+              </GridItem>
+              <GridItem colSpan={1}>
+                <Image
+                  alt={'Logo da Do Brasil'}
+                  src={'/images/logos/realizacao.svg'}
+                  width={67}
+                  height={97}
+                />
+              </GridItem>
+              <GridItem colSpan={2} pt={12}>
+                <Image
+                  alt={'Logo da Ministerio'}
+                  src={'/images/logos/governo.svg'}
+                  width={214}
+                  height={22}
+                />
+              </GridItem>
+            </Grid>
+          </Container>
+        </Box>
         <Grid bgColor={'white'} templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']} pb={[12, 0]}>
           <GridItem colSpan={2}>
             <Box w="100%">
@@ -97,7 +167,7 @@ export default function Home() {
             fontSize={'5xl'}
             color={'yellow.500'}
             fontFamily={'DINNextLTW04-HeavyCondensed'}
-            href={'https://forms.gle/WgpFYdynmS9JaCUq8'}
+            href={'https://forms.gle/X5p7DHfzkkAySZXp6'}
             isExternal
             textDecoration={'underline'}
             _hover={{
