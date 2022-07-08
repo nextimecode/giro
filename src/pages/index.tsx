@@ -85,17 +85,21 @@ export default function Home() {
             </Container>
           </GridItem>
         </Grid>
-        <Center bgColor={'blue.700'} textAlign={'center'} py={12}>
-          <Heading color={'yellow.500'}>
-            Para não perder a inscrição, crie um<br></br> lembrete{' '}
-            <Link
-              href={'https://pt-br.facebook.com/gerdau/'}
-              isExternal
-              textDecoration={'underline'}
-            >
-              clicando aqui
-            </Link>
-          </Heading>
+        <Center bgColor={'blue.700'} textAlign={'center'} py={8}>
+          <Link
+            fontSize={'5xl'}
+            color={'yellow.500'}
+            fontFamily={'DINNextLTW04-HeavyCondensed'}
+            href={'https://forms.gle/WUUqcwXWPzDoNSjX9'}
+            isExternal
+            textDecoration={'underline'}
+            _hover={{
+              color: 'white'
+            }}
+          >
+            Faça agora<br></br>
+            sua inscrição
+          </Link>
         </Center>
         <Box
           id="gerdau"
