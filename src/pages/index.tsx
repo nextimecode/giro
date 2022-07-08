@@ -28,14 +28,21 @@ export default function Home() {
 
       <NextLayout>
         <NextHero />
-        <Grid
-          bgColor={'white'}
-          templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']}
-          mt={-2}
-          pb={[12, 0]}
-        >
+        <Grid mt={-2} bgColor={'white'} templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']}>
+          <Image
+            alt={'Logo da Lei de Incentivo à Cultura'}
+            src={'/images/logos/logo_cultura.svg'}
+            width={35}
+            height={70}
+          />
+          <Text>
+            Projeto Executado por meio da Lei Estadual de Incentivo à Cultura CA 2018.13608.0160 CA
+            2018.13607.0372
+          </Text>
+        </Grid>
+        <Grid bgColor={'white'} templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']} pb={[12, 0]}>
           <GridItem colSpan={2}>
-            <Box w="100%" mt={-12}>
+            <Box w="100%">
               <Image
                 alt={'Imagem de um piano'}
                 src={'/images/piano.png'}
@@ -90,7 +97,7 @@ export default function Home() {
             fontSize={'5xl'}
             color={'yellow.500'}
             fontFamily={'DINNextLTW04-HeavyCondensed'}
-            href={'https://forms.gle/WUUqcwXWPzDoNSjX9'}
+            href={'https://forms.gle/WgpFYdynmS9JaCUq8'}
             isExternal
             textDecoration={'underline'}
             _hover={{
