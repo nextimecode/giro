@@ -30,6 +30,12 @@ export default function Home() {
       <NextLayout>
         <NextHero />
         <NextWithBackgroundImage />
+        <Image
+          alt={'Imagem Gerdau mais Rock in Rio'}
+          src={'/images/superfold.png'}
+          width={1920}
+          height={1174}
+        />
         <Grid
           bgColor={'white'}
           templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']}

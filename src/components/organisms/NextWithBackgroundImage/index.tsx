@@ -1,16 +1,11 @@
 import {
   Stack,
   Flex,
-  Button,
-  VStack,
   Text,
   useBreakpointValue,
   Heading,
-  Divider,
   HStack,
   Container,
-  Box,
-  Center,
   StackDivider
 } from '@chakra-ui/react'
 
