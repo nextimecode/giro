@@ -18,6 +18,7 @@ import {
 } from '@chakra-ui/react'
 import NextFooter from 'components/organisms/nextFooter'
 import NextLink from 'next/link'
+import NextWithBackgroundImage from 'components/organisms/NextWithBackgroundImage'
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
 
       <NextLayout>
         <NextHero />
+        <NextWithBackgroundImage />
         <Grid
           bgColor={'white'}
           templateColumns={['repeat(1, 1fr)', 'repeat(6, 1fr)']}

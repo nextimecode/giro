@@ -3,7 +3,7 @@ const styles = {
     body: {
       fontFamily: 'Calibri',
       color: 'whiteAlpha.900',
-      bg: 'blue.500',
+      bg: '#ffcb0a',
       lineHeight: 'base'
     }
   })
