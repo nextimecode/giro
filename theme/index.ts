@@ -8,8 +8,8 @@ const theme = extendTheme({
   config,
   styles,
   fonts: {
-    heading: `'AkiraExpandedDemo', sans-serif`,
-    body: `'AkiraExpandedDemo', sans-serif`
+    heading: `'DINNextLTW04-HeavyCondensed', sans-serif`,
+    body: `'DINNextLTW04-HeavyCondensed', sans-serif`
   }
 })
 

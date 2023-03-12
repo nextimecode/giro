@@ -37,6 +37,7 @@ export default function WithBackgroundImage() {
               fontWeight={700}
               lineHeight={1.2}
               fontSize={useBreakpointValue({ base: '3xl', md: '2xl' })}
+              fontFamily={'AkiraExpandedDemo'}
             >
               PRESERVANDO A CULTURA
             </Heading>
@@ -46,6 +47,7 @@ export default function WithBackgroundImage() {
               lineHeight={1.2}
               textAlign="right"
               fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}
+              fontFamily={'AkiraExpandedDemo'}
             >
               PROJETAMOS O FUTURO
             </Heading>
