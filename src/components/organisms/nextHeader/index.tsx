@@ -132,66 +132,59 @@ const NextHeader = ({
   const { isOpen, onToggle } = useDisclosure()
 
   return (
-    <Box>
-      <Container maxW="container.lg">
-        <Flex color={'white'} minH={'70px'} align={'center'}>
-          <Box display={{ base: 'block', md: 'none' }}>
-            <Image src={logoSrc} alt={logoAlt} width={85} height={25} />
+    <Container maxW="container.lg">
+      <Flex color={'white'} align={'center'}>
+        <Box display={{ base: 'block', md: 'none' }}>
+          <Image src={logoSrc} alt={logoAlt} width={85} height={25} />
+        </Box>
+        <Flex>
+          <Box display={{ base: 'none', md: 'block' }}>
+            <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoHeight} />
           </Box>
-          <Flex>
-            <Box display={{ base: 'none', md: 'block' }}>
-              <Image src={logoSrc} alt={logoAlt} width={logoWidth} height={logoHeight} />
-            </Box>
-            {logoSubtitle && (
-              <Text fontSize={{ base: 'lg', lg: 'xl' }} color={logoSubtitleColor}>
-                {logoSubtitle}
-              </Text>
-            )}
-          </Flex>
-          <Stack flex={{ base: 1 }} justify={'flex-end'} direction={'row'}>
-            <HStack spacing={{ base: 3, md: 4 }}>
-              <NextJSLink href={'https://www.facebook.com/dobrasil.live/'}>
-                <a target="_blank" rel="noreferrer">
-                  <Image
-                    alt={'Logo Facebook'}
-                    src={'/images/facebook.svg'}
-                    width={31}
-                    height={31}
-                  />
-                </a>
-              </NextJSLink>
-              <NextJSLink href={'https://www.instagram.com/boraprogiro/?hl=pt-br'}>
-                <a target="_blank" rel="noreferrer">
-                  <Image
-                    alt={'Logo Instagram'}
-                    src={'/images/instagram.svg'}
-                    width={31}
-                    height={31}
-                  />
-                </a>
-              </NextJSLink>
-              <NextJSLink href={'https://vimeo.com/dobrasil'}>
-                <a target="_blank" rel="noreferrer">
-                  <Image alt={'Logo Youtube'} src={'/images/youtube.svg'} width={31} height={31} />
-                </a>
-              </NextJSLink>
-            </HStack>
-          </Stack>
-          <Flex ms={12}>
-            <IconButton
-              onClick={onToggle}
-              icon={isOpen ? <CloseIcon w={4} h={4} /> : <HamburgerIcon w={7} h={7} />}
-              variant={'ghost'}
-              color={'beige.500'}
-              aria-label={'Toggle Navigation'}
-            />
-          </Flex>
+          {logoSubtitle && (
+            <Text fontSize={{ base: 'lg', lg: 'xl' }} color={logoSubtitleColor}>
+              {logoSubtitle}
+            </Text>
+          )}
         </Flex>
-        <Collapse in={isOpen} animateOpacity>
-          <MobileNav navItems={navItems} />
-        </Collapse>
-      </Container>
-    </Box>
+        <Stack flex={{ base: 1 }} justify={'flex-end'} direction={'row'}>
+          <HStack spacing={{ base: 3, md: 4 }}>
+            <NextJSLink href={'https://www.facebook.com/dobrasil.live/'}>
+              <a target="_blank" rel="noreferrer">
+                <Image alt={'Logo Facebook'} src={'/images/facebook.svg'} width={31} height={31} />
+              </a>
+            </NextJSLink>
+            <NextJSLink href={'https://www.instagram.com/boraprogiro/?hl=pt-br'}>
+              <a target="_blank" rel="noreferrer">
+                <Image
+                  alt={'Logo Instagram'}
+                  src={'/images/instagram.svg'}
+                  width={31}
+                  height={31}
+                />
+              </a>
+            </NextJSLink>
+            <NextJSLink href={'https://vimeo.com/dobrasil'}>
+              <a target="_blank" rel="noreferrer">
+                <Image alt={'Logo Youtube'} src={'/images/youtube.svg'} width={31} height={31} />
+              </a>
+            </NextJSLink>
+          </HStack>
+        </Stack>
+        <Flex ms={12}>
+          <IconButton
+            onClick={onToggle}
+            icon={isOpen ? <CloseIcon w={4} h={4} /> : <HamburgerIcon w={7} h={7} />}
+            variant={'ghost'}
+            color={'beige.500'}
+            aria-label={'Toggle Navigation'}
+          />
+        </Flex>
+      </Flex>
+      <Collapse in={isOpen} animateOpacity>
+        <MobileNav navItems={navItems} />
+      </Collapse>
+    </Container>
   )
 }
 
