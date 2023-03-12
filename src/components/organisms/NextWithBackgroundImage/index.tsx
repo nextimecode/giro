@@ -8,7 +8,7 @@ import {
   StackDivider
 } from '@chakra-ui/react'
 
-export default function WithBackgroundImage() {
+export default function NextWithBackgroundImage() {
   return (
     <Flex
       w={'full'}

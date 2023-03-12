@@ -11,20 +11,14 @@ const version = packageInfo.version
 const NextFooter = () => {
   return (
     <Flex
-      bgColor="primary-lighter"
+      bgColor="black"
       color="white"
       fontSize="sm"
       w="100%"
       display={['block', 'flex']}
       alignItems="center"
-      h={[40, 14]}
       bottom={0}
     >
-      <Box as="div" w={['100%', '50%']} textAlign="center" py={[3, 4]}>
-        <NextLink href="#">
-          <a target="_blank">Baixe o regulamento</a>
-        </NextLink>
-      </Box>
       <Box as="div" w={['100%', '50%']} textAlign="center" py={[3, 4]}>
         Copyright © {new Date().getFullYear()} | GIRO | v{version}
       </Box>

@@ -3,20 +3,12 @@ import Image from 'next/image'
 import Head from 'next/head'
 import NextLayout from 'components/templates/nextLayout'
 import NextHero from 'components/organisms/nextHero'
-import {
-  Box,
-  Heading,
-  Text,
-  SimpleGrid,
-  HStack,
-  Grid,
-  GridItem,
-  Container,
-  Stack
-} from '@chakra-ui/react'
+import { Box, Heading, Text, HStack, Grid, GridItem, Container, Stack } from '@chakra-ui/react'
 import NextFooter from 'components/organisms/nextFooter'
 import Link from 'next/link'
 import NextWithBackgroundImage from 'components/organisms/NextWithBackgroundImage'
+import NextWithBackgroundImageFooter from 'components/organisms/NextWithBackgroundImageFooter'
+import NextGiroFooter from 'components/organisms/NextGiroFooter'
 
 export default function Home() {
   return (
@@ -27,6 +19,7 @@ export default function Home() {
 
       <NextLayout>
         <NextHero />
+        <Box h={'14px'} bgColor={'#C9996D'} mt={[0, -2]} />
         <NextWithBackgroundImage />
         <Image
           alt={'Imagem Gerdau mais Rock in Rio'}
@@ -50,10 +43,14 @@ export default function Home() {
           </GridItem>
           <GridItem colSpan={5}>
             <Container maxW="container.md" py={[0, 12]}>
-              <Heading color={'#FFCB07'} textAlign={['center', 'start']}>
+              <Heading
+                color={'#FFCB07'}
+                textAlign={['center', 'start']}
+                fontSize={['40px', '4xl', '76px']}
+              >
                 O MOVIMENTO
               </Heading>
-              <Text maxW={'300px'} py={4} textAlign={['center', 'start']}>
+              <Text maxW={'300px'} py={4} textAlign={['center', 'start']} fontSize={'20px'}>
                 O Giro é um movimento que busca impulsionar a cena cultural mineira. Em parceria com
                 grandes marcas organizamos projetos que projetam a cultura mineira para o mundo.{' '}
               </Text>
@@ -94,22 +91,9 @@ export default function Home() {
             </Container>
           </GridItem>
         </Grid>
-        <SimpleGrid bgColor={'beige.500'} columns={[1, 2]} py={12} gap={6}>
-          <Container w="100%" color={'black'}>
-            <Heading fontSize={'xl'}>
-              A Gerdau, a maior empresa Brasileira produtora de aço e uma das principais
-              fornecedoras de aços longos nas Américas e de aços especiais no mundo, agora é
-              parceira do GIRO.
-            </Heading>
-          </Container>
-          <Container w="100%" color={'black'}>
-            <Text>
-              A maior recicladora da América Latina mais uma vez vem reforçar seu compromisso com as
-              futuras gerações, e o aço que já moldava um futuro mais sustentável, agora também vai
-              moldar o Palco Mundo do Rock in Rio Brasil 2022!
-            </Text>
-          </Container>
-        </SimpleGrid>
+        <NextWithBackgroundImageFooter />
+        <Box h={'14px'} bgColor={'#C9996D'} mt={[0, -2]} />
+        <NextGiroFooter />
       </NextLayout>
       <NextFooter />
     </div>
