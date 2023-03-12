@@ -4,7 +4,6 @@ import {
   Text,
   useBreakpointValue,
   Heading,
-  HStack,
   Container,
   StackDivider
 } from '@chakra-ui/react'
@@ -13,16 +12,18 @@ export default function WithBackgroundImage() {
   return (
     <Flex
       w={'full'}
-      minH={'50vh'}
+      minH={['80vh', '50vh']}
       backgroundImage={'url(/images/folder1.png)'}
       backgroundSize={'cover'}
       backgroundPosition={'center center'}
     >
       <Container maxW="container.lg">
-        <HStack
+        <Stack
+          direction={['column', 'row']}
+          align="center"
           h={'100%'}
           w={'full'}
-          gap={40}
+          gap={[10, 40]}
           justify={'center'}
           px={useBreakpointValue({ base: 4, md: 8 })}
         >
@@ -62,7 +63,7 @@ export default function WithBackgroundImage() {
               março.
             </Text>
           </Stack>
-        </HStack>
+        </Stack>
       </Container>
     </Flex>
   )
