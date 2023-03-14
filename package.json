@@ -9,10 +9,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint --fix .",
-    "precommit": "pnpm lint",
+    "precommit": "yarn lint",
     "commit": "cz",
-    "prepush": "pnpm precommit && pnpm i && pnpm test && pnpm build",
-    "go": "pnpm prepush && pnpm dev",
+    "prepush": "yarn precommit && yarn && yarn test && yarn build",
+    "go": "yarn prepush && yarn dev",
     "prepare": "husky install",
     "postinstall": "husky install",
     "test": "jest"
