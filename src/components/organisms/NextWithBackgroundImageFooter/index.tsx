@@ -31,10 +31,10 @@ export default function NextWithBackgroundImageFooter() {
               urbanos da capital.{' '}
             </Text>
             <Text>
-              No Palco Liberdade, o Verbo Gentileza se junta ao MM Gerdau em prol do incentivo da
-              arte local. Com sua curadoria de expositores locais para a nossa feira e um
-              inesquecível show de luzes na fachada do Prédio Rosa, o Verbo Gentileza busca inspirar
-              os seus valores no público.
+              No Palco Liberdade, o Verbo Gentileza se junta à Gerdau e ao MM Gerdau - Museu das
+              Minas e do Metal em prol do incentivo da arte regional. Com a curadoria de expositores
+              locais para o Circuito Gentileza e um inesquecível show de luzes na fachada do Prédio
+              Rosa, o Verbo Gentileza busca inspirar os seus valores no público.
             </Text>
             <Text> Confira a nossa programação para saber mais.</Text>
           </Stack>
