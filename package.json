@@ -11,7 +11,7 @@
     "lint": "eslint --fix .",
     "precommit": "pnpm lint",
     "commit": "cz",
-    "prepush": "git diff HEAD --quiet && git fetch && pnpm precommit && pnpm && pnpm test && pnpm build",
+    "prepush": "pnpm precommit && pnpm && pnpm test && pnpm build",
     "go": "pnpm prepush && pnpm dev",
     "prepare": "husky install",
     "postinstall": "husky install",
