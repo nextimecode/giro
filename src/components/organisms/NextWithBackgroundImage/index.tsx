@@ -60,7 +60,7 @@ export default function NextWithBackgroundImage() {
               cultura. Em 2023, essa jornada completa 10 anos, com muito por vir.
             </Text>
             <Text>
-              Marcando o início de um ano de celebrações dessa parceria, o MM Gerdau - Museu das
+              Marcando o início de um ano de celebrações dessa parceria, o MM Gerdau - Museu das
               Minas e do Metal convida o público para uma semana de programações inéditas e mais
               dois dias de muita festa na rua, no período de 21 a 26 de março.
             </Text>
