@@ -61,8 +61,8 @@ export default function NextWithBackgroundImage() {
             </Text>
             <Text>
               Marcando o início de um ano de celebrações dessa parceria, o MM Gerdau - Museu das
-              Minas e do Metal convida o público para uma semana de programações inéditas e mais
-              dois dias de muita festa na rua, no período de 21 a 26 de março.
+              Minas e do Metal convida o público para uma semana de programações inéditas e um final
+              de semana de festa pela cultura, no período de 21 a 26 de março.
             </Text>
           </Stack>
         </Stack>
