@@ -52,8 +52,14 @@ export default function Home() {
           <Image
             alt={'Programacao mobile'}
             src={'/images/superfold_mobile.jpg'}
-            width={500}
-            height={2276}
+            width={1920}
+            height={3284}
+          />
+          <Image
+            alt={'Programacao mobile 2'}
+            src={'/images/superfold_mobile2.jpg'}
+            width={1920}
+            height={5476}
           />
         </Box>
         <Box h={'32px'} bgColor={'#003E74'} mt={[0, -2]} />
@@ -128,7 +134,7 @@ export default function Home() {
         <NextGiroFooter />
       </NextLayout>
       <NextFooter />
-      <Modal isOpen={isOpen} onClose={onClose} isCentered size={'xl'}>
+      <Modal isOpen={isOpen} onClose={onClose} size={'6xl'}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>Programação</ModalHeader>
