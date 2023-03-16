@@ -12,14 +12,19 @@ export type NextGiroFooterProps = {
 }
 
 const NextGiroFooter = ({
-  image = '/images/footer.svg',
-  width = 1920,
-  height = 216,
+  image = '/images/footer.png',
+  width = 926,
+  height = 139,
   alt = 'Logos das empresas'
 }: NextGiroFooterProps) => {
   return (
     <header>
-      <Box py={8} bgColor={'white'} display={{ base: 'none', sm: 'block' }}>
+      <Box
+        py={8}
+        bgColor={'white'}
+        display={{ base: 'none', sm: 'flex' }}
+        justifyContent={'center'}
+      >
         <Image alt={alt} src={image} width={width} height={height} />
       </Box>
       <Box p={8} bgColor={'white'} display={{ base: 'block', sm: 'none' }}>

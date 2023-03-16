@@ -28,7 +28,7 @@ export default function NextWithBackgroundImageFooter() {
               O Verbo Gentileza é um projeto que acredita que é possível transformar o mundo por
               meio de atitudes gentis. E, por isso, desde 2016, ele encanta e inspira quem mora e
               passa por Belo Horizonte com ações e atividades gratuitas realizadas nos espaços
-              urbanos da capital.{' '}
+              urbanos da capital.
             </Text>
             <Text>
               No Palco Liberdade, o Verbo Gentileza se junta ao MM Gerdau em prol do incentivo da
@@ -36,7 +36,7 @@ export default function NextWithBackgroundImageFooter() {
               inesquecível show de luzes na fachada do Prédio Rosa, o Verbo Gentileza busca inspirar
               os seus valores no público.
             </Text>
-            <Text> Confira a nossa programação para saber mais.</Text>
+            <Text>Confira a nossa programação para saber mais.</Text>
           </Stack>
         </Stack>
       </Container>

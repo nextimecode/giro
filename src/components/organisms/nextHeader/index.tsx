@@ -35,15 +35,11 @@ const NAV_ITEMS: Array<NavItem> = [
   {
     label: 'GERDAU',
     href: '#gerdau'
-  },
+  }
   // {
   //   label: 'RIR',
   //   href: '#'
   // },
-  {
-    label: 'REDES SOCIAIS',
-    href: '#redessocias'
-  }
   // {
   //   label: 'BAIXE O REGULAMENTO',
   //   href: '#'

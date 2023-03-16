@@ -55,12 +55,14 @@ export default function NextWithBackgroundImage() {
           </Stack>
           <Stack maxW={'xl'} align={'flex-start'} spacing={6}>
             <Text>
-              A parceria entre a Gerdau e o Governo de Minas por meio do MM Gerdau - Museu das Minas
-              e do Metal, nasceu do compromisso com a preservação, manutenção e projeção da cultura.
-              Em 2023, essa jornada completa 10 anos, com muito por vir. Marcando o início de um ano
-              de celebrações dessa parceria, o MM Gerdau convida o público para uma semana de
-              programações inéditas e mais dois dias de muita festa na rua, no período de 21 a 26 de
-              março.
+              A parceria entre a Gerdau e o Governo de Minas, por meio do MM Gerdau - Museu das
+              Minas e do Metal, nasceu do compromisso com a preservação, manutenção e projeção da
+              cultura. Em 2023, essa jornada completa 10 anos, com muito por vir.
+            </Text>
+            <Text>
+              Marcando o início de um ano de celebrações dessa parceria, o MM Gerdau - Museu das
+              Minas e do Metal convida o público para uma semana de programações inéditas e mais
+              dois dias de muita festa na rua, no período de 21 a 26 de março.
             </Text>
           </Stack>
         </Stack>
