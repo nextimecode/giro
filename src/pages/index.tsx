@@ -131,7 +131,7 @@ export default function Home() {
       <Modal isOpen={isOpen} onClose={onClose} isCentered size={'xl'}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
+          <ModalHeader>Programação</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
             <Image
@@ -149,10 +149,9 @@ export default function Home() {
           </ModalBody>
 
           <ModalFooter>
-            <Button colorScheme="blue" mr={3} onClick={onClose}>
+            <Button colorScheme="yellow" mr={3} onClick={onClose}>
               Sair
             </Button>
-            <Button variant="ghost">Secondary Action</Button>
           </ModalFooter>
         </ModalContent>
       </Modal>
