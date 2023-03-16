@@ -9,8 +9,7 @@ const styles = {
       fontFamily: 'Calibri',
       color: 'whiteAlpha.900',
       bg: '#ffcb0a',
-      lineHeight: 'base',
-      'webkit-font-smoothing': 'antialiased'
+      lineHeight: 'base'
     }
   })
 }

@@ -25,16 +25,16 @@ export default function NextWithBackgroundImageFooter() {
           </Stack>
           <Stack maxW={'xl'} align={'flex-start'} spacing={6} color={'#EAD6BA'}>
             <Text>
-              O Verbo Gen�leza é um projeto que acredita que é possível transformar o mundo por meio
-              de a�tudes gen�s. E, por isso, desde 2016, ele encanta e inspira quem mora e passa por
-              Belo Horizonte com ações e a�vidades gratuitas realizadas nos espaços urbanos da
-              capital.
+              O Verbo Gentileza é um projeto que acredita que é possível transformar o mundo por
+              meio de atitudes gentis. E, por isso, desde 2016, ele encanta e inspira quem mora e
+              passa por Belo Horizonte com ações e atividades gratuitas realizadas nos espaços
+              urbanos da capital.
             </Text>
             <Text>
-              No Palco Liberdade, o Verbo Gen�leza se junta ao MM Gerdau em prol do incen�vo da arte
-              local. Com sua curadoria de expositores locais para a nossa feira e um inesquecível
-              show de luzes na fachada do Prédio Rosa, o Verbo Gen�leza busca inspirar os seus
-              valores no público.
+              No Palco Liberdade, o Verbo Gentileza se junta ao MM Gerdau em prol do incentivo da
+              arte local. Com sua curadoria de expositores locais para a nossa feira e um
+              inesquecível show de luzes na fachada do Prédio Rosa, o Verbo Gentileza busca inspirar
+              os seus valores no público.
             </Text>
             <Text>Confira a nossa programação para saber mais.</Text>
           </Stack>

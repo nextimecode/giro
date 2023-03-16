@@ -3,7 +3,25 @@ import Image from 'next/image'
 import Head from 'next/head'
 import NextLayout from 'components/templates/nextLayout'
 import NextHero from 'components/organisms/nextHero'
-import { Box, Heading, Text, HStack, Grid, GridItem, Container, Stack } from '@chakra-ui/react'
+import {
+  Box,
+  Heading,
+  Text,
+  HStack,
+  Grid,
+  GridItem,
+  Container,
+  Stack,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+  Button
+} from '@chakra-ui/react'
 import NextFooter from 'components/organisms/nextFooter'
 import Link from 'next/link'
 import NextWithBackgroundImage from 'components/organisms/NextWithBackgroundImage'
@@ -11,6 +29,7 @@ import NextWithBackgroundImageFooter from 'components/organisms/NextWithBackgrou
 import NextGiroFooter from 'components/organisms/NextGiroFooter'
 
 export default function Home() {
+  const { isOpen, onOpen, onClose } = useDisclosure()
   return (
     <div>
       <Head>
@@ -21,9 +40,9 @@ export default function Home() {
         <NextHero />
         <Box h={'14px'} bgColor={'#C9996D'} mt={[0, -2]} />
         <NextWithBackgroundImage />
-        <Box display={{ base: 'none', sm: 'block' }}>
+        <Box display={{ base: 'none', sm: 'block' }} onClick={onOpen} cursor={'pointer'}>
           <Image
-            alt={'Programacao mobile'}
+            alt={'Programacao desktop'}
             src={'/images/superfold.jpg'}
             width={1920}
             height={1174}
@@ -31,10 +50,10 @@ export default function Home() {
         </Box>
         <Box display={{ base: 'block', sm: 'none' }}>
           <Image
-            alt={'Programacao Desktop'}
+            alt={'Programacao mobile'}
             src={'/images/superfold_mobile.jpg'}
-            width={1280}
-            height={5827}
+            width={500}
+            height={2276}
           />
         </Box>
         <Box h={'32px'} bgColor={'#003E74'} mt={[0, -2]} />
@@ -109,6 +128,34 @@ export default function Home() {
         <NextGiroFooter />
       </NextLayout>
       <NextFooter />
+      <Modal isOpen={isOpen} onClose={onClose} isCentered size={'xl'}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>Modal Title</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Image
+              alt={'Programacao da semana'}
+              src={'/images/programacao_semana.jpg'}
+              width={1920}
+              height={1170}
+            />
+            <Image
+              alt={'Programacao do final de semana'}
+              src={'/images/programacao_final_semana.jpg'}
+              width={1920}
+              height={1170}
+            />
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme="blue" mr={3} onClick={onClose}>
+              Sair
+            </Button>
+            <Button variant="ghost">Secondary Action</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
     </div>
   )
 }

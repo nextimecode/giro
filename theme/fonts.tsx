@@ -4,11 +4,11 @@ const Fonts = () => (
   <Global
     styles={`
       @font-face {
-        font-family: 'DINNextLTW04-HeavyCondensed';
+        font-family: 'DINNextLTPro-HeavyCondensed';
         font-style: normal;
         font-weight: 400;
         font-display: swap;
-        src: url('./fonts/DINNextLTPro-HeavyCondensed/DINNextLTW04-HeavyCondensed.ttf')
+        src: url('./fonts/DINNextLTPro-HeavyCondensed/DINNextLTPro-HeavyCondensed.ttf')
       }
       @font-face {
         font-family: 'AkiraExpandedDemo';
