@@ -9,6 +9,10 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-MX7P63W6CV"
+            strategy="afterInteractive"
+          />
           <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
