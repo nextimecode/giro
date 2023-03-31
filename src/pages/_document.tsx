@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-css-tags */
 /* eslint-disable @next/next/next-script-for-ga */
 import React from 'react'
+import Script from 'next/script'
 import Document, { Head, Html, Main, NextScript } from 'next/document'
 
 export default class MyDocument extends Document {
@@ -8,6 +9,15 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-MX7P63W6CV');
+            `}
+          </Script>
           <meta
             name="description"
             content="Giro é um movimento que busca impulsionar a cultura musical mineira. Criamos oportunidades para que novos talentos da indústria local consigam transformar sua arte em negócio e levar a cultura mineira para o mundo. "
